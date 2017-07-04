@@ -1,0 +1,242 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lisa's Portfolio</title>
+<meta name=" Welcome to Lisa's Portfolio!">
+<!-- CSS Code -->
+<link rel="stylesheet" href="css/style.css">
+<!-- JS Code -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-69748409-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script>
+
+  $(document).ready(function(){
+      function scrollToAnchor(aid){
+        var aTag = $("a[name='"+aid+"']");
+          $('html,body').animate({scrollTop: aTag.offset().top}, 'slow');
+        }
+
+        // a [name="p1"]
+        // 'a [name="p1"]'
+        // "a[name='"    + aid +    "']"
+
+        // .animate(what's going to animate, animation style)
+
+        // for the end of line 15 to change speed... for name such as slow or fast it has to be in ''
+        // for the use of a number you don't need quotes
+        // 'slow' or 3000
+
+        // attribute is the things in orange on atom but red on notepad++
+
+  $('a').click(function(){
+    var href=$(this).attr('href').replace('#','');
+      scrollToAnchor(href);
+    });
+  });
+
+</script>
+
+
+</head>
+
+    <body>
+
+
+      <a name="p1"></a>
+        <!-- Section #1 the higher the number the slower it goes-->
+        <section id="home" data-speed="4" data-type="background">
+          <article></article>
+
+          <div class="heading">
+            <!-- <h1> Welcome to Lisa's Portfolio </h1> -->
+            <div class="thinkbright">
+              <img src="image/win.jpg" alt="">
+
+
+            </div>
+
+
+          </div>
+
+        </section>
+
+        <a name="p2"></a>
+        <!-- Section #2 -->
+        <section id="about" data-speed="10" data-type="background">
+          <article>
+
+
+                    <div class="column">
+
+                      <div class="lisa">
+                        <img src="image/lisa.jpg" alt="lisa">
+                      </div>
+                      <div class="aboutinfo">
+
+
+                      <h1>Hello, My name is Lisa Welty and I am a Web and Graphic Designer!</h1>
+                      I am 25 years old and I live in Indianapolis, Indiana. I graduated with a
+                      Associates degree from Ivy Tech Community College, and I have a passion
+                      in design. My style is unique as I like to brighten things up a bit to
+                      catch others attention. I also hand code everything. I have skills in HTML 5,
+                      CSS3, Jquery, Javascript, as well as php and Wordpress. I also enjoy Graphic Design
+                      as well such as business cards and other ways of adverstising.
+                    </div></div>
+
+                    <div class="myname">
+
+                    <img src="image/name3.png" alt="">
+
+
+
+                    </div>
+
+
+
+          </article>
+        </section>
+
+        <a name="p3"></a>
+        <!-- Section #3 -->
+        <section id="home2" data-speed="5" data-type="background">
+          <article></article>
+        </section>
+
+        <a name="p4"></a>
+        <!-- Section #4 -->
+        <section id="home3" data-speed="5" data-type="background">
+          <article>
+<br>
+            <H1>Portfolio Work</h1>
+        <div class="portfolio">
+
+                    <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 5</div>
+                      <img src="image/map.jpg" style="width:100%">
+                      <div class="text"><h1>Indiana Wineries</h1>used as a mobile app
+                      that is connected to google maps using a api key which I
+                    imputed several locations and customized each modle window with
+                  accurate details about each winery.</div>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 5</div>
+                      <img src="image/harmony.jpg" style="width:100%">
+                      <div class="text"><h1>Harmony Winery</h1> A re-do of a real winery,
+                      this was a small project I took on myself. This was not for the real
+                    real winery (Harmony Winery) I did create the logo. This is a paralax website.</div>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 /5</div>
+                      <img src="image/fresh.jpg" style="width:100%">
+                      <div class="text"><h1>Logo Design</h1> Small exaple of skills in logo design</div>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 5</div>
+                      <img src="image/chicken.jpg" style="width:100%">
+                      <div class="text"><h1>Graphic Design</h1>I created the image and
+                      placed it on a cellphone case for advertising examples</div>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">5 / 5</div>
+                      <img src="image/card1.jpg" style="width:100%">
+                      <div class="text"><h1>Business Card</h1>I created the logo for a client,
+                      this is her business card I did design and create for her business.</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span>
+                      <span class="dot" onclick="currentSlide(2)"></span>
+                      <span class="dot" onclick="currentSlide(3)"></span>
+                      <span class="dot" onclick="currentSlide(4)"></span>
+                      <span class="dot" onclick="currentSlide(5)"></span>
+
+                    </div>
+                    <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+                      </div>
+
+          </article>
+        </section>
+
+        <a name="p5"></a>
+        <!-- Section #5 -->
+        <section id="home4" data-speed="20" data-type="background">
+          <article>
+          </article>
+        </section>
+
+        <a name="p6"></a>
+        <!-- Section #6 -->
+        <section id="home5" data-speed="10" data-type="background">
+          <article>
+        <div class="resume">
+          <iframe src="resume.pdf" width="1000px" height="500px"></iframe>
+        </div>
+
+
+
+
+
+
+          </article>
+        </section>
+
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+
+          <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <nav class="social">
+                  <ul>
+                      <li><a href="#p1">Main <i class="fa fa-home"></i></i></a></li>
+                      <li><a href="#p2">About <i class="fa fa-info"></i></i></a></li>
+                      <li><a href="#p4">Portfolio <i class="fa fa-briefcase"></i></i></a></li>
+                      <li><a href="#p6">Contact <i class="fa fa-phone"></i></i></a></li>
+                      <!-- <li><a href="https://twitter.com/harmonywinery" target="_blank">Twitter <i class="fa fa-twitter"></i></a></li>
+                      <li><a href="https://www.facebook.com/Harmonywinery/?rf=286991054648176" target="_blank">Facebook <i class="fa fa-facebook"></i></a></li> -->
+<!--  -->
+                  </ul>
+              </nav>
+
+
+    </body>
+
+
+</html>
