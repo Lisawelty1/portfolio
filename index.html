@@ -1,242 +1,342 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/favicon.ico">
 
-<title>Lisa's Portfolio</title>
-<meta name=" Welcome to Lisa's Portfolio!">
-<!-- CSS Code -->
-<link rel="stylesheet" href="css/style.css">
-<!-- JS Code -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="js/script.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-69748409-2', 'auto');
-  ga('send', 'pageview');
-</script>
+    <title>Lisa Welty</title>
 
-<script>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-  $(document).ready(function(){
-      function scrollToAnchor(aid){
-        var aTag = $("a[name='"+aid+"']");
-          $('html,body').animate({scrollTop: aTag.offset().top}, 'slow');
-        }
-
-        // a [name="p1"]
-        // 'a [name="p1"]'
-        // "a[name='"    + aid +    "']"
-
-        // .animate(what's going to animate, animation style)
-
-        // for the end of line 15 to change speed... for name such as slow or fast it has to be in ''
-        // for the use of a number you don't need quotes
-        // 'slow' or 3000
-
-        // attribute is the things in orange on atom but red on notepad++
-
-  $('a').click(function(){
-    var href=$(this).attr('href').replace('#','');
-      scrollToAnchor(href);
-    });
-  });
-
-</script>
+    <!-- Custom styles for this template -->
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
 
-</head>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 
-    <body>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
+  <body>
 
-      <a name="p1"></a>
-        <!-- Section #1 the higher the number the slower it goes-->
-        <section id="home" data-speed="4" data-type="background">
-          <article></article>
-
-          <div class="heading">
-            <!-- <h1> Welcome to Lisa's Portfolio </h1> -->
-            <div class="thinkbright">
-              <img src="image/win.jpg" alt="">
-
-
-            </div>
-
-
+    <div id="h">
+      <div class="logo">
+        <h2><img src="assets/img/logo.png" alt="logo"></h2>
+      </div><!--/logo-->
+      <div class="container centered">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1>Hello, my name is <b>Lisa Welty</b>.<br/>I am a Web and Graphic Designer Devolper</h1>
           </div>
+        </div><!--/row-->
 
-        </section>
+        <div class="row mt">
+          <div class="col-sm-4">
+            <i class="ion-ios7-monitor-outline"></i>
+            <h3>Web Design</h3>
+          </div><!--/col-md-4-->
 
-        <a name="p2"></a>
-        <!-- Section #2 -->
-        <section id="about" data-speed="10" data-type="background">
-          <article>
+          <div class="col-sm-4">
+            <i class="ion-ios7-browsers-outline"></i>
+            <h3>Web Development</h3>
+          </div><!--/col-md-4-->
 
+          <div class="col-sm-4">
+            <i class="ion-ios7-copy-outline"></i>
+            <h3>Graphic Design</h3>
+          </div><!--/col-md-4-->
 
-                    <div class="column">
+        </div><!--/row-->
+      </div><!--/container-->
+    </div><!--H-->
 
-                      <div class="lisa">
-                        <img src="image/lisa.jpg" alt="lisa">
-                      </div>
-                      <div class="aboutinfo">
+    <div class="container ptb">
+      <div class="row">
+        <h2 class="centered mb"><h1>Hello There!</h1> <img src="assets/img/lisa.jpg" alt="">
 
-
-                      <h1>Hello, My name is Lisa Welty and I am a Web and Graphic Designer!</h1>
-                      I am 25 years old and I live in Indianapolis, Indiana. I graduated with a
-                      Associates degree from Ivy Tech Community College, and I have a passion
-                      in design. My style is unique as I like to brighten things up a bit to
-                      catch others attention. I also hand code everything. I have skills in HTML 5,
-                      CSS3, Jquery, Javascript, as well as php and Wordpress. I also enjoy Graphic Design
-                      as well such as business cards and other ways of adverstising.
-                    </div></div>
-
-                    <div class="myname">
-
-                    <img src="image/name3.png" alt="">
-
-
-
-                    </div>
-
-
-
-          </article>
-        </section>
-
-        <a name="p3"></a>
-        <!-- Section #3 -->
-        <section id="home2" data-speed="5" data-type="background">
-          <article></article>
-        </section>
-
-        <a name="p4"></a>
-        <!-- Section #4 -->
-        <section id="home3" data-speed="5" data-type="background">
-          <article>
-<br>
-            <H1>Portfolio Work</h1>
-        <div class="portfolio">
-
-                    <div class="slideshow-container">
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 5</div>
-                      <img src="image/map.jpg" style="width:100%">
-                      <div class="text"><h1>Indiana Wineries</h1>used as a mobile app
-                      that is connected to google maps using a api key which I
-                    imputed several locations and customized each modle window with
-                  accurate details about each winery.</div>
-                    </div>
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 5</div>
-                      <img src="image/harmony.jpg" style="width:100%">
-                      <div class="text"><h1>Harmony Winery</h1> A re-do of a real winery,
-                      this was a small project I took on myself. This was not for the real
-                    real winery (Harmony Winery) I did create the logo. This is a paralax website.</div>
-                    </div>
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 /5</div>
-                      <img src="image/fresh.jpg" style="width:100%">
-                      <div class="text"><h1>Logo Design</h1> Small exaple of skills in logo design</div>
-                    </div>
-                    <div class="mySlides fade">
-                      <div class="numbertext">4 / 5</div>
-                      <img src="image/chicken.jpg" style="width:100%">
-                      <div class="text"><h1>Graphic Design</h1>I created the image and
-                      placed it on a cellphone case for advertising examples</div>
-                    </div>
-                    <div class="mySlides fade">
-                      <div class="numbertext">5 / 5</div>
-                      <img src="image/card1.jpg" style="width:100%">
-                      <div class="text"><h1>Business Card</h1>I created the logo for a client,
-                      this is her business card I did design and create for her business.</div>
-                    </div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
-                    <br>
-                    <div style="text-align:center">
-                      <span class="dot" onclick="currentSlide(1)"></span>
-                      <span class="dot" onclick="currentSlide(2)"></span>
-                      <span class="dot" onclick="currentSlide(3)"></span>
-                      <span class="dot" onclick="currentSlide(4)"></span>
-                      <span class="dot" onclick="currentSlide(5)"></span>
-
-                    </div>
-                    <script>
-                    var slideIndex = 1;
-                    showSlides(slideIndex);
-                    function plusSlides(n) {
-                      showSlides(slideIndex += n);
-                    }
-                    function currentSlide(n) {
-                      showSlides(slideIndex = n);
-                    }
-                    function showSlides(n) {
-                      var i;
-                      var slides = document.getElementsByClassName("mySlides");
-                      var dots = document.getElementsByClassName("dot");
-                      if (n > slides.length) {slideIndex = 1}
-                      if (n < 1) {slideIndex = slides.length}
-                      for (i = 0; i < slides.length; i++) {
-                          slides[i].style.display = "none";
-                      }
-                      for (i = 0; i < dots.length; i++) {
-                          dots[i].className = dots[i].className.replace(" active", "");
-                      }
-                      slides[slideIndex-1].style.display = "block";
-                      dots[slideIndex-1].className += " active";
-                    }
-                    </script>
-                      </div>
-
-          </article>
-        </section>
-
-        <a name="p5"></a>
-        <!-- Section #5 -->
-        <section id="home4" data-speed="20" data-type="background">
-          <article>
-          </article>
-        </section>
-
-        <a name="p6"></a>
-        <!-- Section #6 -->
-        <section id="home5" data-speed="10" data-type="background">
-          <article>
-        <div class="resume">
-          <iframe src="resume.pdf" width="1000px" height="500px"></iframe>
+        <div class="col-md-6">
+          <p>I am 25 years old and I live in Indianapolis, Indiana. I graduated with a
+          Associates degree from Ivy Tech Community College, and I have a passion
+          in design. My style is unique as I like to brighten things up a bit to
+          catch others attention. I also hand code everything.</p>
+          <p> I have skills in HTML 5, CSS3, Jquery, Javascript,
+             as well as php and Wordpress. I also enjoy Graphic Design
+          as well such as business cards and other ways of adverstising.</p>
+        </div><!--/col-md-6-->
+      </div><!--/row-->
+    </div><!-- /.container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <img src="assets/img/name3.png" class="img-responsive" alt="">
         </div>
+      </div><!--/row-->
+    </div><!--/.container-->
+
+    <div id="g">
+      <div class="container">
+        <div class="row centered">
+          <h2>Check some of my latest works.</h2>
+          <div class="col-md-8 col-md-offset-2">
+            <!-- <p>Contrary to popular belief, Lorem Ipsum is not simply random text.<br/>It has roots in a piece of classical Latin literature<br/>from 45 BC, making it over 2000 years old.</p> -->
+
+          </div><!--/col-md-8-->
+        </div><!--/row-->
+      </div><!--/.container-->
+    <div class="portfolio-centered mt">
+      <div class="recentitems portfolio">
+
+        <div class="portfolio-item graphic-design">
+          <div class="he-wrap tpl6">
+          <img src="assets/img/3.jpg" class="img-responsive" alt="">
+            <div class="he-view">
+              <div class="bg a0" data-animate="fadeIn">
+                <h3 class="a1" data-animate="fadeInDown">Indiana Wineries (website)</h3>
+                <a data-rel="prettyPhoto" href="assets/img/3.jpg"
+                class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
+                <a href="https://lisawelty1.github.io/indianawine/"
+                class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
+               </div><!-- he bg -->
+            </div><!-- he view -->
+          </div><!-- he wrap -->
+        </div><!-- end col-12 -->
+
+        <div class="portfolio-item web-design">
+          <div class="he-wrap tpl6">
+          <img src="assets/img/2.jpg" class="img-responsive" alt="">
+            <div class="he-view">
+              <div class="bg a0" data-animate="fadeIn">
+                <h3 class="a1" data-animate="fadeInDown">Harmony Winery (website)</h3>
+                <a data-rel="prettyPhoto" href="assets/img/2.jpg"
+                 class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
+                <a href="https://lisawelty1.github.io/harmonywinery/"
+                class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
+              </div><!-- he bg -->
+            </div><!-- he view -->
+          </div><!-- he wrap -->
+        </div><!-- end col-12 -->
+
+        <div class="portfolio-item graphic-design">
+          <div class="he-wrap tpl6">
+          <img src="assets/img/card1.jpg" class="img-responsive" alt="">
+            <div class="he-view">
+              <div class="bg a0" data-animate="fadeIn">
+                <h3 class="a1" data-animate="fadeInDown">Business Card (Front)</h3>
+                <a data-rel="prettyPhoto" href="assets/img/card1.jpg"
+                class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
+                <!-- <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a> -->
+              </div><!-- he bg -->
+            </div><!-- he view -->
+          </div><!-- he wrap -->
+        </div><!-- end col-12 -->
+
+        <div class="portfolio-item graphic-design">
+          <div class="he-wrap tpl6">
+          <img src="assets/img/card2.jpg" class="img-responsive" alt="">
+            <div class="he-view">
+              <div class="bg a0" data-animate="fadeIn">
+                <h3 class="a1" data-animate="fadeInDown">Business Card (back)</h3>
+                <a data-rel="prettyPhoto" href="assets/img/card2.jpg"
+                class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
+                <!-- <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a> -->
+              </div><!-- he bg -->
+            </div><!-- he view -->
+          </div><!-- he wrap -->
+        </div><!-- end col-12 -->
+
+        <div class="portfolio-item books">
+          <div class="he-wrap tpl6">
+          <img src="assets/img/chicken.jpg" class="img-responsive" alt="">
+            <div class="he-view">
+              <div class="bg a0" data-animate="fadeIn">
+                <h3 class="a1" data-animate="fadeInDown">Graphic Design</h3>
+                <a data-rel="prettyPhoto" href="assets/img/chicken.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
+                <!-- <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a> -->
+              </div><!-- he bg -->
+            </div><!-- he view -->
+          </div><!-- he wrap -->
+        </div><!-- end col-12 -->
+
+        <div class="portfolio-item graphic-design">
+          <div class="he-wrap tpl6">
+          <img src="assets/img/fresh.jpg" class="img-responsive" alt="">
+            <div class="he-view">
+              <div class="bg a0" data-animate="fadeIn">
+                <h3 class="a1" data-animate="fadeInDown">Logo design</h3>
+                <a data-rel="prettyPhoto" href="assets/img/fresh.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
+                <!-- <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a> -->
+               </div><!-- he bg -->
+            </div><!-- he view -->
+          </div><!-- he wrap -->
+        </div><!-- end col-12 -->
+
+        <div class="portfolio-item web-design">
+          <div class="he-wrap tpl6">
+          <img src="assets/img/water.jpg" class="img-responsive" alt="">
+            <div class="he-view">
+              <div class="bg a0" data-animate="fadeIn">
+                <h3 class="a1" data-animate="fadeInDown">Poster (Thirst Project)</h3>
+                <a data-rel="prettyPhoto" href="assets/img/water.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
+                <!-- <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a> -->
+              </div><!-- he bg -->
+            </div><!-- he view -->
+          </div><!-- he wrap -->
+        </div><!-- end col-12 -->
+       </div><!-- portfolio -->
+    </div><!-- portfolio container -->
+
+    <!-- <div class="container mt">
+        <div class="row clients centered">
+          <p class="mb">Some clients that I had the pleasure to working for.</p>
+          <div class="col-sm-2 col-sm-offset-1">
+            <img src="assets/img/client1.png" alt="">
+          </div>
+          <div class="col-sm-2">
+            <img src="assets/img/client3.png" alt="">
+          </div>
+          <div class="col-sm-2">
+            <img src="assets/img/client2.png" alt="">
+          </div>
+          <div class="col-sm-2">
+            <img src="assets/img/client4.png" alt="">
+          </div>
+          <div class="col-sm-2">
+            <img src="assets/img/client5.png" alt="">
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <div id="sep">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-md-8 col-md-offset-2">
+            <h1>I live in the amazing San Francisco</h1>
+            <h3 class="mb">Lorem Ipsum is simply dummy text<br/>of the printing and typesetting industry.</h3>
+            <button class="btn btn-conf btn-clear">Request for Information</button>
+          </div>
+        </div><!--/row-->
+      </div><!--/container-->
+    </div><!--/.sep-->
+
+    <div id="f">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-md-8 col-md-offset-2">
+            <a href="#"><i class="ion-social-twitter"></i></a>
+            <a href="#"><i class="ion-social-dribbble"></i></a>
+            <a href="#"><i class="ion-social-instagram"></i></a>
+            <a href="#"><i class="ion-social-facebook"></i></a>
+          </div><!--/col-md-8-->
+        </div>
+      </div><!--/container-->
+    </div><!--/.F-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina-1.1.0.js"></script>
+    <script src="assets/js/jquery.hoverdir.js"></script>
+    <script src="assets/js/jquery.hoverex.min.js"></script>
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="assets/js/jquery.isotope.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 
 
+    <script>
+// Portfolio
+(function($) {
+  "use strict";
+  var $container = $('.portfolio'),
+    $items = $container.find('.portfolio-item'),
+    portfolioLayout = 'fitRows';
 
+    if( $container.hasClass('portfolio-centered') ) {
+      portfolioLayout = 'masonry';
+    }
 
+    $container.isotope({
+      filter: '*',
+      animationEngine: 'best-available',
+      layoutMode: portfolioLayout,
+      animationOptions: {
+      duration: 750,
+      easing: 'linear',
+      queue: false
+    },
+    masonry: {
+    }
+    }, refreshWaypoints());
 
+    function refreshWaypoints() {
+      setTimeout(function() {
+      }, 1000);
+    }
 
-          </article>
-        </section>
+    $('nav.portfolio-filter ul a').on('click', function() {
+        var selector = $(this).attr('data-filter');
+        $container.isotope({ filter: selector }, refreshWaypoints());
+        $('nav.portfolio-filter ul a').removeClass('active');
+        $(this).addClass('active');
+        return false;
+    });
 
-        <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+    function getColumnNumber() {
+      var winWidth = $(window).width(),
+      columnNumber = 1;
 
-          <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-        <nav class="social">
-                  <ul>
-                      <li><a href="#p1">Main <i class="fa fa-home"></i></i></a></li>
-                      <li><a href="#p2">About <i class="fa fa-info"></i></i></a></li>
-                      <li><a href="#p4">Portfolio <i class="fa fa-briefcase"></i></i></a></li>
-                      <li><a href="#p6">Contact <i class="fa fa-phone"></i></i></a></li>
-                      <!-- <li><a href="https://twitter.com/harmonywinery" target="_blank">Twitter <i class="fa fa-twitter"></i></a></li>
-                      <li><a href="https://www.facebook.com/Harmonywinery/?rf=286991054648176" target="_blank">Facebook <i class="fa fa-facebook"></i></a></li> -->
-<!--  -->
-                  </ul>
-              </nav>
+      if (winWidth > 1200) {
+        columnNumber = 5;
+      } else if (winWidth > 950) {
+        columnNumber = 4;
+      } else if (winWidth > 600) {
+        columnNumber = 3;
+      } else if (winWidth > 400) {
+        columnNumber = 2;
+      } else if (winWidth > 250) {
+        columnNumber = 1;
+      }
+        return columnNumber;
+      }
 
+      function setColumns() {
+        var winWidth = $(window).width(),
+        columnNumber = getColumnNumber(),
+        itemWidth = Math.floor(winWidth / columnNumber);
 
-    </body>
+        $container.find('.portfolio-item').each(function() {
+          $(this).css( {
+          width : itemWidth + 'px'
+        });
+      });
+    }
 
+    function setPortfolio() {
+      setColumns();
+      $container.isotope('reLayout');
+    }
 
+    $container.imagesLoaded(function () {
+      setPortfolio();
+    });
+
+    $(window).on('resize', function () {
+    setPortfolio();
+  });
+})(jQuery);
+</script>
+  </body>
 </html>
